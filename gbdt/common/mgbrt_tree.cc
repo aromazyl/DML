@@ -6,9 +6,10 @@
 #include "../include/mgbrt_config.h"
 #include "../include/mgbrt_tree.h"
 #include "../include/mgbrt_comm.h"
-namespace mgbrt {
-namespace tree {
-mgbrt::config::Config *gConfTree = mgbrt::config::Config::GetConfig();
+namespace DML {
+namespace gbdt {
+
+DML::config::Config *gConfTree = mgbrt::config::Config::GetConfig();
 
 void Tree::SplitNodes(FinalSplits* info) {
   VLOG(3) << "split nodes in tree, final splits:" << DumpFinalSplits(*info);

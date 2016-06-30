@@ -54,6 +54,6 @@ class Singleton {
   Singleton& operator=(const Singleton<T>&);
 };
 
-template <typename T>T* Singleton<T>::ms_Singleton = NULL;
-template <typename T>std::auto_ptr<Singleton<T> > Singleton<T>::instance_;
+template <typename T> T* Singleton<T>::ms_Singleton = NULL;
+template <typename T> std::auto_ptr<Singleton<T> > Singleton<T>::instance_;
 template <typename T> ::thread::Mutex Singleton<T>::lock_;
